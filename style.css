@@ -79,7 +79,8 @@ width: 120px;
   
 }
 .banimage img{
-    width: 100%;
+    width: 90%;
+    margin-left: 20px;
     height: auto;
 }
 
@@ -113,3 +114,120 @@ width: 120px;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     }
 }
+/* start of part  o3 standerd curriculam*/
+body{
+    background-image: url(./assets/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+
+
+}
+.curriculumsection{
+    text-align: center;
+            margin: 50px auto;
+            max-width: 1400px;
+}
+.curriculumsection h2{
+    font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1;
+    max-width: 30%;
+    background: linear-gradient(135deg, #f7f7f7, #fff);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+    
+}
+/* Unique gradients for each card */
+.card:nth-child(1) {
+    background: linear-gradient(1deg, #fbfbfb, #b4e8f8);
+}
+.card:nth-child(2) {
+    background: linear-gradient(1deg, #f6f5f1, #f9e3b7);
+}
+.card:nth-child(3) {
+    background: linear-gradient(1deg, #f8f7f8, #eecdfb);
+}
+.arrow-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+.arrow-buttons button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffa500;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 4px, 4px, rgba(0, 0, 0, 0.25));
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.arrow-buttons button:hover {
+    background-color: #e69500;
+    transform: scale(1.1);
+}
+.card a{
+    text-decoration: none;
+}
+#redmore2{
+    color:orange;
+}
+#redmore1{
+    color: rgb(135, 172, 240);
+}
+#redmore3{
+color: rgb(237, 71, 190);
+}
+/* /* lets rewsponse it * */
+@media screen and (max-width:500px){
+    .card{
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .curriculum-section h2 {
+        font-size: 2rem;
+    }
+    .arrow-buttons{
+        display: none;
+    }
+}
+
+
+/* end of curiculum section */
