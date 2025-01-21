@@ -231,3 +231,131 @@ color: rgb(237, 71, 190);
 
 
 /* end of curiculum section */
+.stories-section{
+    background: linear-gradient(to bottom, #faf0e6, #fac58f);
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.stories-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+.storycards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.storycard{
+    background: #fff;
+            border-radius: 10px;
+            /* overflow: hidden; */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: grid;
+           
+            transition: transform 0.3s ease;
+}
+#item1{
+grid-row: span 2;
+}
+.storycard:hover {
+    transform: translateY(-10px);
+}
+.storycard img {
+    width: 100%;
+    height: auto;
+}
+.btn1{
+    background-color: rgb(106, 232, 60);
+    border: none;
+    border-radius: 48px;
+    max-width: 180px;
+    max-height: 50px;
+    margin-top: -150px;
+    margin-left: 20px;
+    text-align: center;
+}
+.btn2{
+    background-color: rgba(60, 216, 232, 1);
+    border: none;
+    border-radius: 48px;
+    max-width: 180px;
+    max-height: 50px;
+    margin-top: -30px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.btn3{
+    background-color: rgb(232, 163, 60);
+    border: none;
+    border-radius: 48px;
+    max-width: 180px;
+    max-height: 50px;
+    padding: 10px;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+.btn4{
+    background-color: rgb(232, 60, 218);
+    border: none;
+    border-radius: 48px;
+    max-width: 180px;
+    max-height: 50px;
+    padding: 10px;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
+
+.btn5{
+    background-color: rgb(60, 201, 232);
+    border: none;
+    border-radius: 48px;
+    max-width: 180px;
+    max-height: 50px;
+    margin-top: -30px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.card-content {
+    padding: 20px;
+}
+.storycard h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.storycard p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.view-all:hover {
+    background-color: #333;
+}
+@media screen and (max-width:500px){
+    .storycards{
+
+        grid-template-columns: repeat(2,1fr);
+    }
+    #item1{
+        display: none;
+    }
+}
