@@ -3,36 +3,56 @@
     padding: 0;
     box-sizing: border-box;
 }
+.banandnav{
+    width: 100%;
+    height: auto;
+}
 header{
-    display: flex;
-    justify-content: space-between;
+
+   display: flex;
+   justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
             
           
 }
-.logo {
+.logo{
     display: flex;
     align-items: center;
-}
-.logo img {
-    width: 40px;
-    margin-right: 10px;
 }
 nav {
-    display: flex;
-    align-items: center;
+display: flex;
+justify-content: space-between;
+list-style: none;
 }
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-nav ul li a {
-    align-items: center;
+
+nav a{
+    
+
     text-decoration: none;
+    gap: 30px;
+}
+
+#iconbar{
+    display: none;
+}
+#Home{
     color: orange;
-    font-weight: bold;
+}
+#ab{
+    color: cyan;
+}
+#fa{
+    color: blueviolet;
+}
+#ad{
+    color: chartreuse;
+}
+#empow{
+    color: rgb(244, 167, 113);
+}
+#impo{
+    color:rgb(117, 117, 245);
 }
 .contactbtn{
     background-color: orange;
@@ -40,15 +60,15 @@ nav ul li a {
     border-radius: 14px;
     margin-left: 20px;
     color: white;
-    width: 100px;
+width: 120px;
 }
-.burder{
+/* .burder{
     width: 35px;
     height: 5px;
     background-color: black;
     margin: 6px 0;
     display: none;
-}
+} */
 .banner{
     display: flex;
     align-items: center;
@@ -56,9 +76,11 @@ nav ul li a {
 }
 .bantext{
     max-width: 50%;
+  
 }
-.banimage{
+.banimage img{
     width: 100%;
+    height: auto;
 }
 
 .btnban{
@@ -66,7 +88,28 @@ nav ul li a {
     color: white;
     border: none;
     border-radius: 15px;
+    padding: 10px 10px;
 }
 
-
-
+/* 
+.headtext{
+    display: flex;
+    font-size: larger;
+    font-weight: 600;
+    align-items: center;
+  
+} */
+@media screen and (max-width:500px){
+    #iconbar{
+        display: inline;
+    }
+    nav,#logotext{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    header{
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    }
+}
