@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            
+          
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav ul li a {
+    align-items: center;
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+.contactbtn{
+    background-color: orange;
+    border: none;
+    border-radius: 14px;
+    margin-left: 20px;
+    color: white;
+    width: 100px;
+}
+.burder{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    display: none;
+}
+.banner{
+    display: flex;
+    align-items: center;
+
+}
+.bantext{
+    max-width: 50%;
+}
+.banimage{
+    width: 100%;
+}
+
+.btnban{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+
+
