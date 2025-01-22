@@ -95,7 +95,9 @@ height: 40px;
     /* justify-content: center;
     justify-items: center; */
 }
-
+.curriculumsection h1{
+margin-bottom: 10px;
+}
 .btnban{
     background-color: black;
     color: white;
